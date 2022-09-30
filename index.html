@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Log in Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="welcome.html" onsubmit="return loginvalidate()" class="form" id="login">
+            <h1 class="login--form">Login</h1>
+            <div class="form__input--group">
+                <input type="text" id="username" class="form__input" autofocus placeholder="Username or Email"> 
+                <div class="form__input--message--error"></div>
+            </div>
+            <div class="form__input--group">
+                <input type="password" id="password" class="form__input" autofocus placeholder="Password"> 
+                <div class="form__input--message--error"></div>
+            </div>
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a href="#" class="form__link" id="linkCreatePassword">Forgot Password?</a>
+            </p>
+            <p class="form__text">
+                <a href="#" class="form__link" id="linkCreateAccount">Don't have an account? Create Account</a>
+            </p>
+        </form>
+        <div>
+            <form action="index.html" onsubmit="return Newvalidate()" class="form__form--hidden" id="createPassword">
+                <h1 class="login--form">Create New Password</h1>
+                <div class="form__input--group">
+                    <input type="password" id="newPass" class="form__input" autofocus placeholder="Password"> 
+                    <div class="form__input--message--error"></div>
+                </div>
+                <div class="form__input--group">
+                    <input type="password" id="newPassCon" class="form__input" autofocus placeholder="Confirm Password"> 
+                    <div class="form__input--message--error"></div>
+                </div>
+                <button class="form__button" type="submit">Change Password</button>
+            <p class="form__text">
+                <a href="#" class="form__link" id="linklogin">Go back</a>
+            </p>
+            </form>     
+        </div>
+        <div>
+            <form action="welcome.html" onsubmit="return Signupvalidate()" class="form__form--hidden" id="createAccount">
+                <h1 class="login--form">Create Account</h1>
+                <div class="form__input--group">
+                    <input type="text" id="user" class="form__input" autofocus placeholder="Username"> 
+                    <div class="form__input--message--error"></div>
+                </div>
+                <div class="form__input--group">
+                    <input type="text" id="email" class="form__input"  placeholder="Email Address"> 
+                    <div class="form__input--message--error"></div>
+                </div>
+                <div class="form__input--group">
+                    <input type="password" id="pass" class="form__input"  placeholder="Password"> 
+                    <div class="form__input--message--error"></div>
+                </div>
+                <div class="form__input--group">
+                    <input type="password" id="confirm" class="form__input"  placeholder="Confirm Password"> 
+                    <div class="form__input--message--error"></div>
+                </div>
+                <button class="form__button" type="submit">Sign up & Login</button>
+                <p class="form__text">
+                    <a href="#" class="form__link" id="linktologin">Already have an account? Sign in</a>
+                </p>
+            </form>
+        </div>    
+</div>
+</body>
+</html>
