@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="logout.js"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        #logout {
+            padding: 1rem 2rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #fff;
+            border-radius: var(--border-radius);
+            outline: none;
+            cursor: pointer;
+            background: var(--color-primary);
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: baseline;
+            width: 250px;
+            letter-spacing: 1px;
+        }
+
+        #logout:hover {
+            background-color: rgb(233, 130, 130);
+            border: 2px solid rgb(202, 95, 95);
+        }
+
+        .admin-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .welcome {
+            font-size: 60px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome admin</h1>
+    <div class="admin-container">
+        <h1 class="welcome">Welcome admin</h1>
+        <div class="logout">
+            <button type="button" onclick="logout()" id="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>Logout
+            </button>
+        </div>
+    </div>
 </body>
 </html>
